@@ -1,7 +1,7 @@
 #!/bin/lua
 y,n,t,l,m,i,x=io.write,arg[1]or"untitled.txt",{},1,1,0,table.concat
-y("MTEd v1.0\t\t"..n.."\n")h=io.open(n,"a+")h:seek("set",0)z=1
-for v in h:read("*a"):gmatch"([^\n]+)\n?"do
+y("MTEd v1.0\t\t",n,"\n")h=io.open(n,"a+")h:seek("set",0)z=1
+for v in h:read"*a":gmatch"([^\n]+)\n?"do
 t[z]=v
 z=z+1
 end
